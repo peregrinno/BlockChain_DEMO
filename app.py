@@ -72,8 +72,9 @@ def index():
     blocks = c.fetchall()
 
     conn.close()
+    year = 2023
 
-    return render_template('index.html', blocks=blocks)
+    return render_template('index.html', blocks=blocks, year=year)
 
 @app.route('/add', methods=['POST'])
 def add():
