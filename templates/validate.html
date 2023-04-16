@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Blockchain Simulation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Blockchain Simulation</h1>
+      
+      {% if valid %}
+      <div class="alert alert-success" role="alert">
+        A Blockchain é valida!
+      </div>
+      {% else %}
+      <div class="alert alert-danger" role="alert">
+        A Blockchain não é valida!
+      </div>
+      {% endif %}
+      
+      <a href="/" class="btn btn-primary">Voltar</a>
+    </div>
+  </body>
+</html>
